@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using static System.Console;
 
-namespace SingleResponsibility
+namespace SOLID_SingleResponsibility
 {
     public class Journal
     {
