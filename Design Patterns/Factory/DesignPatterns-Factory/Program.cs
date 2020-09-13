@@ -7,11 +7,8 @@ namespace DesignPatterns_Factory
         Cartesian, Polar
     }
 
-    public class Point
+    public class PointFactory
     {
-        private double x, y;
-
-        // factory method design pattern
         public static Point NewCartesianPoint(double x, double y)
         {
             return new Point(x, y);
@@ -21,6 +18,14 @@ namespace DesignPatterns_Factory
         {
             return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
         }
+    }
+
+    public class Point
+    {
+        private double x, y;
+
+        // factory method design pattern
+
 
 
         public override string ToString()
@@ -28,7 +33,7 @@ namespace DesignPatterns_Factory
             return $"x:{x} y:{y}";
         }
 
-        private Point(double x, double y)
+        public Point(double x, double y)
         {
             this.x = x;
             this.y = y;
@@ -59,7 +64,7 @@ namespace DesignPatterns_Factory
     {
         static void Main(string[] args)
         {
-            Point p = Point.NewPolarPoint(1, Math.PI / 2);
+            Point p = PointFactory.NewPolarPoint(1, Math.PI / 2);
             Console.WriteLine(p);
         }
     }
