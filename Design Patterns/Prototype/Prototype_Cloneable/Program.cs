@@ -2,7 +2,7 @@
 
 namespace Prototype_Cloneable
 {
-    public class Person : ICloneable
+    public class Person
     {
         public string[] Names;
         public Address Address;
@@ -13,9 +13,10 @@ namespace Prototype_Cloneable
             Address = address;
         }
 
-        public object Clone()
+        public Person(Person other)
         {
-            return new Person(Names, (Address)Address.Clone());
+            Names = other.Names;
+            Address = new Address(other.Address);
         }
 
         public override string ToString()
@@ -23,20 +24,21 @@ namespace Prototype_Cloneable
             return $"{nameof(Names)}: {string.Join(" ", Names)} {nameof(Address)}: {Address}";
         }
     }
-    public class Address : ICloneable
+    public class Address
     {
         public string StreetName;
         public int HouseNumber;
+
+        public Address(Address other)
+        {
+            StreetName = other.StreetName;
+            HouseNumber = other.HouseNumber;
+        }
 
         public Address(string streetName, int houseNumber)
         {
             StreetName = streetName;
             HouseNumber = houseNumber;
-        }
-
-        public object Clone()
-        {
-            return new Address(StreetName, HouseNumber);
         }
 
         public override string ToString()
@@ -59,7 +61,7 @@ namespace Prototype_Cloneable
                 )
             );
 
-            var Jane = (Person)John.Clone();
+            var Jane = new Person(John);
             Jane.Address.HouseNumber = 10;
 
             Console.WriteLine(John);
