@@ -2,7 +2,12 @@
 
 namespace Prototype_Cloneable
 {
-    public class Person
+    public interface IPrototype<T>
+    {
+        T DeepCopy();
+    }
+
+    public class Person : IPrototype<Person>
     {
         public string[] Names;
         public Address Address;
@@ -23,8 +28,13 @@ namespace Prototype_Cloneable
         {
             return $"{nameof(Names)}: {string.Join(" ", Names)} {nameof(Address)}: {Address}";
         }
+
+        public Person DeepCopy()
+        {
+            return new Person(Names, Address.DeepCopy());
+        }
     }
-    public class Address
+    public class Address : IPrototype<Address>
     {
         public string StreetName;
         public int HouseNumber;
@@ -39,6 +49,11 @@ namespace Prototype_Cloneable
         {
             StreetName = streetName;
             HouseNumber = houseNumber;
+        }
+
+        public Address DeepCopy()
+        {
+            return new Address(StreetName, HouseNumber);
         }
 
         public override string ToString()
@@ -61,7 +76,8 @@ namespace Prototype_Cloneable
                 )
             );
 
-            var Jane = new Person(John);
+            // var Jane = new Person(John);
+            var Jane = John.DeepCopy();
             Jane.Address.HouseNumber = 10;
 
             Console.WriteLine(John);
