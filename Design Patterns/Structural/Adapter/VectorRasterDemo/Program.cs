@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Numerics;
 using static System.Console;
 using MoreLinq;
+using System.Collections;
+using System.Linq;
 
 namespace VectorRasterDemo
 {
@@ -16,6 +18,18 @@ namespace VectorRasterDemo
             X = x;
             Y = y;
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Point point &&
+                   X == point.X &&
+                   Y == point.Y;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(X, Y);
+        }
     }
 
     public class Line
@@ -26,6 +40,18 @@ namespace VectorRasterDemo
         {
             Start = start;
             End = end;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Line line &&
+                   EqualityComparer<Point>.Default.Equals(Start, line.Start) &&
+                   EqualityComparer<Point>.Default.Equals(End, line.End);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Start, End);
         }
     }
 
@@ -46,13 +72,21 @@ namespace VectorRasterDemo
         }
     }
 
-    public class LineToPointAdapter : Collection<Point>
+    public class LineToPointAdapter:IEnumerable<Point>
     {
         private static int count;
 
+        private static Dictionary<int, List<Point>> cache = new Dictionary<int, List<Point>>();
+
+
         public LineToPointAdapter(Line line)
         {
+            var hash = line.GetHashCode();
+            if (cache.ContainsKey(hash)) return;
+
             WriteLine($"{++count}: Generating points for line [{line.Start.X},{line.Start.Y}]-[{line.End.X},{line.End.Y}]");
+
+            var points = new List<Point>();
 
             int left = Math.Min(line.Start.X, line.End.X);
             int right = Math.Max(line.Start.X, line.End.X);
@@ -66,7 +100,7 @@ namespace VectorRasterDemo
 
                 for (int y = top; y <= bottom; ++y)
                 {
-                    Add(new Point(left, y));
+                    points.Add(new Point(left, y));
                 }
             }
             else if (dy == 0)
@@ -74,9 +108,21 @@ namespace VectorRasterDemo
 
                 for (int x = left; x <= right; ++x)
                 {
-                    Add(new Point(x, top));
+                    points.Add(new Point(x, top));
                 }
             }
+
+            cache.Add(hash, points);
+        }
+
+        public IEnumerator<Point> GetEnumerator()
+        {
+            return cache.Values.SelectMany(x => x).GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -93,7 +139,7 @@ namespace VectorRasterDemo
             Write(".");
         }
 
-        static void Main(string[] args)
+        public static void Draw()
         {
             foreach (var vo in vectorObjects)
             {
@@ -103,6 +149,12 @@ namespace VectorRasterDemo
                     adapter.ForEach(DrawPoint);
                 }
             }
+        }
+
+        static void Main(string[] args)
+        {
+            Draw();
+            Draw();
         }
     }
 }
