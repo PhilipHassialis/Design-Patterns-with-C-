@@ -59,7 +59,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericValueAdapter", "Design Patterns\Structural\Adapter\GenericValueAdapter\GenericValueAdapter.csproj", "{0DAFA6A4-8B29-4F19-93A0-55F08D3D83CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterInDependencyInjection", "Design Patterns\Structural\Adapter\AdapterInDependencyInjection\AdapterInDependencyInjection.csproj", "{507B511F-658A-46A2-8F2F-5BBF06475D2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterInDependencyInjection", "Design Patterns\Structural\Adapter\AdapterInDependencyInjection\AdapterInDependencyInjection.csproj", "{507B511F-658A-46A2-8F2F-5BBF06475D2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}"
 EndProject
@@ -67,9 +67,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterCodingExercise", "Ex
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{6A6DAE7D-796D-471E-9F50-1965BB94C046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgePattern", "Design Patterns\Structural\Bridge\BridgePattern\BridgePattern.csproj", "{33573AE3-22C4-4CE9-A0BD-05399B2B29C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgePattern", "Design Patterns\Structural\Bridge\BridgePattern\BridgePattern.csproj", "{33573AE3-22C4-4CE9-A0BD-05399B2B29C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeCodingExercise", "Exercises\BridgeCodingExercise\BridgeCodingExercise.csproj", "{BE7AF9FD-E624-4546-933F-EEEA320DB6C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeCodingExercise", "Exercises\BridgeCodingExercise\BridgeCodingExercise.csproj", "{BE7AF9FD-E624-4546-933F-EEEA320DB6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricShapes", "Design Patterns\Structural\Composite\GeometricShapes\GeometricShapes.csproj", "{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite", "Composite", "{2E8A5742-ED2F-4812-B9F2-6061D7ECC31A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -357,6 +361,18 @@ Global
 		{BE7AF9FD-E624-4546-933F-EEEA320DB6C5}.Release|x64.Build.0 = Release|Any CPU
 		{BE7AF9FD-E624-4546-933F-EEEA320DB6C5}.Release|x86.ActiveCfg = Release|Any CPU
 		{BE7AF9FD-E624-4546-933F-EEEA320DB6C5}.Release|x86.Build.0 = Release|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Debug|x64.Build.0 = Debug|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Release|x64.ActiveCfg = Release|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Release|x64.Build.0 = Release|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -393,6 +409,8 @@ Global
 		{6A6DAE7D-796D-471E-9F50-1965BB94C046} = {6F100CB2-B542-4F74-8A68-9CD6A9B28262}
 		{33573AE3-22C4-4CE9-A0BD-05399B2B29C5} = {6A6DAE7D-796D-471E-9F50-1965BB94C046}
 		{BE7AF9FD-E624-4546-933F-EEEA320DB6C5} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
+		{58F58E04-96B0-4119-90DC-9FF13A0A1F6C} = {2E8A5742-ED2F-4812-B9F2-6061D7ECC31A}
+		{2E8A5742-ED2F-4812-B9F2-6061D7ECC31A} = {6F100CB2-B542-4F74-8A68-9CD6A9B28262}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
