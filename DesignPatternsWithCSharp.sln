@@ -91,17 +91,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleInheritanceWithDefa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicDecoratorComposition", "Design Patterns\Structural\Decorator\DynamicDecoratorComposition\DynamicDecoratorComposition.csproj", "{C0E0BA8C-EC68-48EA-9088-BDE46D3D0255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorInDependencyInjection", "Design Patterns\Structural\Decorator\DecoratorInDependencyInjection\DecoratorInDependencyInjection.csproj", "{1345C475-9255-4E28-8A80-AEEFC65D4F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorInDependencyInjection", "Design Patterns\Structural\Decorator\DecoratorInDependencyInjection\DecoratorInDependencyInjection.csproj", "{1345C475-9255-4E28-8A80-AEEFC65D4F5F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeCodingExercise", "Exercises\CompositeCodingExercise\CompositeCodingExercise.csproj", "{8FEC9DB3-A75F-4D62-B0ED-ED28D8C40B71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorCodingExercise", "Exercises\DecoratorCodingExercise\DecoratorCodingExercise.csproj", "{9A78BFB5-A766-4C60-91A4-B55DBFC62036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorCodingExercise", "Exercises\DecoratorCodingExercise\DecoratorCodingExercise.csproj", "{9A78BFB5-A766-4C60-91A4-B55DBFC62036}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Façade", "Façade", "{F56D1BA7-780F-408B-92BF-40B38C3AF14D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaçadePattern", "Design Patterns\Structural\Façade\FaçadePattern\FaçadePattern.csproj", "{FDC809EC-F71E-4C46-86E8-00F5B5F717AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaçadePattern", "Design Patterns\Structural\Façade\FaçadePattern\FaçadePattern.csproj", "{FDC809EC-F71E-4C46-86E8-00F5B5F717AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaçadeCodingExercise", "Exercises\FaçadeCodingExercise\FaçadeCodingExercise.csproj", "{B3DA37F7-3EED-468E-ABCC-C4B636229BA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaçadeCodingExercise", "Exercises\FaçadeCodingExercise\FaçadeCodingExercise.csproj", "{B3DA37F7-3EED-468E-ABCC-C4B636229BA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flyweight", "Flyweight", "{F09D4804-9AD4-49E2-BCDC-F6C21684310D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatingUserNames", "Design Patterns\Structural\Flyweight\RepeatingUserNames\RepeatingUserNames.csproj", "{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -545,6 +549,18 @@ Global
 		{B3DA37F7-3EED-468E-ABCC-C4B636229BA1}.Release|x64.Build.0 = Release|Any CPU
 		{B3DA37F7-3EED-468E-ABCC-C4B636229BA1}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3DA37F7-3EED-468E-ABCC-C4B636229BA1}.Release|x86.Build.0 = Release|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Debug|x64.Build.0 = Debug|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Debug|x86.Build.0 = Debug|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Release|x64.ActiveCfg = Release|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Release|x64.Build.0 = Release|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Release|x86.ActiveCfg = Release|Any CPU
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -597,6 +613,8 @@ Global
 		{F56D1BA7-780F-408B-92BF-40B38C3AF14D} = {6F100CB2-B542-4F74-8A68-9CD6A9B28262}
 		{FDC809EC-F71E-4C46-86E8-00F5B5F717AB} = {F56D1BA7-780F-408B-92BF-40B38C3AF14D}
 		{B3DA37F7-3EED-468E-ABCC-C4B636229BA1} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
+		{F09D4804-9AD4-49E2-BCDC-F6C21684310D} = {6F100CB2-B542-4F74-8A68-9CD6A9B28262}
+		{BE574F39-DE93-41E1-B8A1-C7AEAAA6E657} = {F09D4804-9AD4-49E2-BCDC-F6C21684310D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
