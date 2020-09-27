@@ -109,17 +109,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatingUserNames", "Desig
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyweightCodingExercise", "Exercises\FlyweightCodingExercise\FlyweightCodingExercise.csproj", "{920FFAC8-662F-4FE6-AF71-A5BBC495D24B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFormatting", "Design Patterns\Structural\Flyweight\TextFormatting\TextFormatting.csproj", "{5CE46247-B8B0-4F9D-9AA6-F368925F191F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFormatting", "Design Patterns\Structural\Flyweight\TextFormatting\TextFormatting.csproj", "{5CE46247-B8B0-4F9D-9AA6-F368925F191F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{CA591FEB-0284-4D68-9CB0-CC3C42E6DC3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectionProxy", "Design Patterns\Structural\Proxy\ProtectionProxy\ProtectionProxy.csproj", "{0619B6B3-D4B7-43D5-84E3-E5D7730E2378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtectionProxy", "Design Patterns\Structural\Proxy\ProtectionProxy\ProtectionProxy.csproj", "{0619B6B3-D4B7-43D5-84E3-E5D7730E2378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyProxy", "Design Patterns\Structural\Proxy\PropertyProxy\PropertyProxy.csproj", "{36AEB4F7-E072-461B-9C21-55B647D78F78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyProxy", "Design Patterns\Structural\Proxy\PropertyProxy\PropertyProxy.csproj", "{36AEB4F7-E072-461B-9C21-55B647D78F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueProxy", "Design Patterns\Structural\Proxy\ValueProxy\ValueProxy.csproj", "{0DB3BB7E-8E2E-4896-89E5-93CA91B84D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueProxy", "Design Patterns\Structural\Proxy\ValueProxy\ValueProxy.csproj", "{0DB3BB7E-8E2E-4896-89E5-93CA91B84D2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeProxy", "Design Patterns\Structural\Proxy\CompositeProxy\CompositeProxy.csproj", "{81917F1D-F596-4AC5-8BD7-B9116BAA849C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeProxy", "Design Patterns\Structural\Proxy\CompositeProxy\CompositeProxy.csproj", "{81917F1D-F596-4AC5-8BD7-B9116BAA849C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeProxyArrayBackedProperties", "Design Patterns\Structural\Proxy\CompositeProxyArrayBackedProperties\CompositeProxyArrayBackedProperties.csproj", "{DAD7B036-77BA-4953-82E6-52DD2B8509A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -647,6 +649,18 @@ Global
 		{81917F1D-F596-4AC5-8BD7-B9116BAA849C}.Release|x64.Build.0 = Release|Any CPU
 		{81917F1D-F596-4AC5-8BD7-B9116BAA849C}.Release|x86.ActiveCfg = Release|Any CPU
 		{81917F1D-F596-4AC5-8BD7-B9116BAA849C}.Release|x86.Build.0 = Release|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Debug|x64.Build.0 = Debug|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Debug|x86.Build.0 = Debug|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Release|x64.ActiveCfg = Release|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Release|x64.Build.0 = Release|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Release|x86.ActiveCfg = Release|Any CPU
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -708,6 +722,7 @@ Global
 		{36AEB4F7-E072-461B-9C21-55B647D78F78} = {CA591FEB-0284-4D68-9CB0-CC3C42E6DC3D}
 		{0DB3BB7E-8E2E-4896-89E5-93CA91B84D2F} = {CA591FEB-0284-4D68-9CB0-CC3C42E6DC3D}
 		{81917F1D-F596-4AC5-8BD7-B9116BAA849C} = {CA591FEB-0284-4D68-9CB0-CC3C42E6DC3D}
+		{DAD7B036-77BA-4953-82E6-52DD2B8509A3} = {CA591FEB-0284-4D68-9CB0-CC3C42E6DC3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
