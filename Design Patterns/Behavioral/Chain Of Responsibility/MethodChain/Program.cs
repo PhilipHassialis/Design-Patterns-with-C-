@@ -13,7 +13,7 @@ namespace MethodChain
         }
 
         public string Name { get; set; }
-        public int Attack { get; set; }
+        public int Attack { get; set; } 
         public int Defence { get; set; }
 
         public override string ToString()
@@ -31,10 +31,10 @@ namespace MethodChain
         {
             this.creature = creature;
         }
-
+        
         public void Add(CreatureModifier cm)
         {
-            if (next != null) next.Add(cm); else next = cm;
+            if (next != null) next.Add(cm); else next = cm; 
         }
 
         public virtual void Handle() => next?.Handle();
