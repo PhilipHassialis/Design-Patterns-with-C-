@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CommandDesignPattern
 {
@@ -26,6 +27,7 @@ namespace CommandDesignPattern
     public interface ICommand
     {
         void Call();
+        void Undo();
     }
 
     public class BankAccountCommand:ICommand
@@ -34,6 +36,7 @@ namespace CommandDesignPattern
         public enum Action { Deposit, Withdraw }
         private Action action;
         private int amount;
+        private bool succeeded;
 
         public BankAccountCommand(BankAccount account, Action action, int amount)
         {
@@ -44,13 +47,32 @@ namespace CommandDesignPattern
 
         public void Call()
         {
+            
             switch (action)
             {
                 case Action.Deposit:
                     account.Deposit(amount);
+                    succeeded = true;
                     break;
                 case Action.Withdraw:
+                    succeeded = account.WithDraw(amount);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public void Undo()
+        {
+            if (!succeeded) return;
+            Console.WriteLine("Undoing call ");
+            switch (action)
+            {
+                case Action.Deposit:
                     account.WithDraw(amount);
+                    break;
+                case Action.Withdraw:
+                    account.Deposit(amount);
                     break;
                 default:
                     break;
@@ -65,7 +87,7 @@ namespace CommandDesignPattern
             var commands = new List<BankAccountCommand>()
             {
                 new BankAccountCommand(ba,BankAccountCommand.Action.Deposit,100),
-                new BankAccountCommand(ba,BankAccountCommand.Action.Withdraw,50)
+                new BankAccountCommand(ba,BankAccountCommand.Action.Withdraw,1150)
 
             };
 
@@ -74,6 +96,14 @@ namespace CommandDesignPattern
             {
                 c.Call();
             }
+            Console.WriteLine(ba);
+
+            foreach (var c in Enumerable.Reverse(commands))
+            {
+               
+                c.Undo();
+            }
+
             Console.WriteLine(ba);
         }
     }
