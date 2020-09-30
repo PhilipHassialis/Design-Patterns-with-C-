@@ -139,7 +139,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodChain", "Design Patte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrokerChain", "Design Patterns\Behavioral\Chain Of Responsibility\BrokerChain\BrokerChain.csproj", "{FE8A1B46-597F-4BE8-B061-C8127CF20A58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityCodingExercise", "Exercises\ChainOfResponsibilityCodingExercise\ChainOfResponsibilityCodingExercise.csproj", "{211F85F5-5B97-49FE-9421-A73C7097940D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityCodingExercise", "Exercises\ChainOfResponsibilityCodingExercise\ChainOfResponsibilityCodingExercise.csproj", "{211F85F5-5B97-49FE-9421-A73C7097940D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{E7E0A8A0-51DB-44A1-A19C-053E335461E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandDesignPattern", "Design Patterns\Behavioral\Command\CommandDesignPattern\CommandDesignPattern.csproj", "{070A1522-35FE-44EA-A42B-A1BA864E331B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -763,6 +767,18 @@ Global
 		{211F85F5-5B97-49FE-9421-A73C7097940D}.Release|x64.Build.0 = Release|Any CPU
 		{211F85F5-5B97-49FE-9421-A73C7097940D}.Release|x86.ActiveCfg = Release|Any CPU
 		{211F85F5-5B97-49FE-9421-A73C7097940D}.Release|x86.Build.0 = Release|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Debug|x64.Build.0 = Debug|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Debug|x86.Build.0 = Debug|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Release|x64.ActiveCfg = Release|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Release|x64.Build.0 = Release|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Release|x86.ActiveCfg = Release|Any CPU
+		{070A1522-35FE-44EA-A42B-A1BA864E331B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -834,6 +850,8 @@ Global
 		{77136155-6520-4CA8-88BC-232BC1C6A2EB} = {B8CDF52C-5F77-42BD-89F7-0C8A43F3C782}
 		{FE8A1B46-597F-4BE8-B061-C8127CF20A58} = {B8CDF52C-5F77-42BD-89F7-0C8A43F3C782}
 		{211F85F5-5B97-49FE-9421-A73C7097940D} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
+		{E7E0A8A0-51DB-44A1-A19C-053E335461E8} = {16DD21A1-4ECE-48FB-82E1-897440384066}
+		{070A1522-35FE-44EA-A42B-A1BA864E331B} = {E7E0A8A0-51DB-44A1-A19C-053E335461E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
