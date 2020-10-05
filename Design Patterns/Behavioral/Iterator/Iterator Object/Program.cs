@@ -26,7 +26,7 @@ namespace Iterator_Object
     public class InOrderIterator<T>
     {
         private readonly Node<T> root;
-        public Node<T> Current;
+        public Node<T> Current { get; set; }
         private bool yieldedStart;
         public InOrderIterator(Node <T> root)
         {
@@ -80,34 +80,39 @@ namespace Iterator_Object
             this.root = root;
         }
 
-        public IEnumerable<Node<T>> InOrder
+        public InOrderIterator<T> GetEnumerator()
         {
-            get
-            {
-                IEnumerable<Node<T>> Traverse(Node<T> current)
-                {
-                    if (current.Left!=null)
-                    {
-                        foreach (var left in Traverse(current.Left))
-                        {
-                            yield return left;
-                        }
-                    }
-                    yield return current;
-                    if (current.Right != null)
-                    {
-                        foreach (var right in Traverse(current.Right))
-                        {
-                            yield return right;
-                        }
-                    }
-                }
-                foreach (var node in Traverse(root))
-                {
-                    yield return node;
-                }
-            }
+            return new InOrderIterator<T>(root);
         }
+
+        //public IEnumerable<Node<T>> InOrder
+        //{
+        //    get
+        //    {
+        //        IEnumerable<Node<T>> Traverse(Node<T> current)
+        //        {
+        //            if (current.Left!=null)
+        //            {
+        //                foreach (var left in Traverse(current.Left))
+        //                {
+        //                    yield return left;
+        //                }
+        //            }
+        //            yield return current;
+        //            if (current.Right != null)
+        //            {
+        //                foreach (var right in Traverse(current.Right))
+        //                {
+        //                    yield return right;
+        //                }
+        //            }
+        //        }
+        //        foreach (var node in Traverse(root))
+        //        {
+        //            yield return node;
+        //        }
+        //    }
+        //}
     }
 
 
@@ -126,7 +131,12 @@ namespace Iterator_Object
             Console.WriteLine("\n=======================");
 
             var tree = new BinaryTree<int>(root);
-            Console.WriteLine(string.Join(",",tree.InOrder.Select(x=>x.Value)));
+            //Console.WriteLine(string.Join(",",tree.InOrder.Select(x=>x.Value)));
+
+            foreach (var node in tree)
+            {
+                Console.Write(node.Value.ToString()+" ");
+            }
         }
     }
 }
