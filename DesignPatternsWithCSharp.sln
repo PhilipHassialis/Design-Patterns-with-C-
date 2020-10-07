@@ -167,9 +167,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mediator", "Mediator", "{8C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatRoom", "Design Patterns\Behavioral\Mediator\ChatRoom\ChatRoom.csproj", "{E8B78153-EB88-49C2-BF79-16BDCCF6D1C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event Broker", "Design Patterns\Behavioral\Mediator\Event Broker\Event Broker.csproj", "{E48FAFEC-4891-4C78-ABA3-142E31599331}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event Broker", "Design Patterns\Behavioral\Mediator\Event Broker\Event Broker.csproj", "{E48FAFEC-4891-4C78-ABA3-142E31599331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatR_Library_Demo", "Design Patterns\Behavioral\Mediator\MediatR\MediatR_Library_Demo.csproj", "{919F5C44-BDFB-433E-89FF-7C820910ADC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR_Library_Demo", "Design Patterns\Behavioral\Mediator\MediatR\MediatR_Library_Demo.csproj", "{919F5C44-BDFB-433E-89FF-7C820910ADC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator Coding Exercise", "Exercises\Mediator Coding Exercise\Mediator Coding Exercise.csproj", "{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -925,6 +927,18 @@ Global
 		{919F5C44-BDFB-433E-89FF-7C820910ADC1}.Release|x64.Build.0 = Release|Any CPU
 		{919F5C44-BDFB-433E-89FF-7C820910ADC1}.Release|x86.ActiveCfg = Release|Any CPU
 		{919F5C44-BDFB-433E-89FF-7C820910ADC1}.Release|x86.Build.0 = Release|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Debug|x64.Build.0 = Debug|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Debug|x86.Build.0 = Debug|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x64.ActiveCfg = Release|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x64.Build.0 = Release|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x86.ActiveCfg = Release|Any CPU
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1011,6 +1025,7 @@ Global
 		{E8B78153-EB88-49C2-BF79-16BDCCF6D1C6} = {8CE2065B-D08D-4119-9F06-9C077F3E2971}
 		{E48FAFEC-4891-4C78-ABA3-142E31599331} = {8CE2065B-D08D-4119-9F06-9C077F3E2971}
 		{919F5C44-BDFB-433E-89FF-7C820910ADC1} = {8CE2065B-D08D-4119-9F06-9C077F3E2971}
+		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
