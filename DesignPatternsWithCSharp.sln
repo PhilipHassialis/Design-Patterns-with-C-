@@ -171,7 +171,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event Broker", "Design Patt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR_Library_Demo", "Design Patterns\Behavioral\Mediator\MediatR\MediatR_Library_Demo.csproj", "{919F5C44-BDFB-433E-89FF-7C820910ADC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator Coding Exercise", "Exercises\Mediator Coding Exercise\Mediator Coding Exercise.csproj", "{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator Coding Exercise", "Exercises\Mediator Coding Exercise\Mediator Coding Exercise.csproj", "{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Memento", "Memento", "{5A9CB429-EB76-4BFB-86BE-A2B60722DCDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoDesignPattern", "Design Patterns\Behavioral\Memento\MementoDesignPattern\MementoDesignPattern.csproj", "{A16DE927-A8EF-4132-8EB6-75443832CAC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -939,6 +943,18 @@ Global
 		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x64.Build.0 = Release|Any CPU
 		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26}.Release|x86.Build.0 = Release|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Debug|x64.Build.0 = Debug|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Debug|x86.Build.0 = Debug|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Release|x64.ActiveCfg = Release|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Release|x64.Build.0 = Release|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Release|x86.ActiveCfg = Release|Any CPU
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1026,6 +1042,8 @@ Global
 		{E48FAFEC-4891-4C78-ABA3-142E31599331} = {8CE2065B-D08D-4119-9F06-9C077F3E2971}
 		{919F5C44-BDFB-433E-89FF-7C820910ADC1} = {8CE2065B-D08D-4119-9F06-9C077F3E2971}
 		{8E76E6E3-A4BB-4599-A92E-EAC2F7474A26} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
+		{5A9CB429-EB76-4BFB-86BE-A2B60722DCDF} = {16DD21A1-4ECE-48FB-82E1-897440384066}
+		{A16DE927-A8EF-4132-8EB6-75443832CAC7} = {5A9CB429-EB76-4BFB-86BE-A2B60722DCDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
