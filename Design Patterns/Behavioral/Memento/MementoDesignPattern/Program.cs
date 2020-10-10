@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace MementoDesignPattern
 {
@@ -6,7 +9,7 @@ namespace MementoDesignPattern
     {
         public int Balance { get; }
 
-        public Memento (int balance)
+        public Memento(int balance)
         {
             Balance = balance;
         }
@@ -15,21 +18,57 @@ namespace MementoDesignPattern
     public class BankAccount
     {
         private int balance;
+        private List<Memento> changes = new List<Memento>();
+        private int current;
 
         public BankAccount(int balance)
         {
             this.balance = balance;
+            changes.Add(new Memento(balance));
         }
 
         public Memento Deposit(int amount)
         {
             balance += amount;
-            return new Memento(balance);
+            var m = new Memento(balance);
+            changes.Add(m); current++;
+            return m;
         }
 
-        public void Restore(Memento m)
+        public Memento Restore(Memento m)
         {
-            balance = m.Balance;
+            if (m != null)
+            {
+
+                balance = m.Balance;
+                changes.Add(m);
+                return m;
+            }
+            else return null;
+
+        }
+
+        public Memento Undo()
+        {
+            if (current > 0)
+            {
+                var m = changes[--current];
+                balance = m.Balance;
+                return m;
+            }
+            else
+                return null;
+        }
+
+        public Memento Redo()
+        {
+            if (current+1<changes.Count)
+            {
+                var m = changes[++current];
+                balance = m.Balance;
+                return m;
+            }
+            return null;
         }
 
         public override string ToString()
@@ -43,15 +82,27 @@ namespace MementoDesignPattern
         static void Main(string[] args)
         {
             var ba = new BankAccount(100);
-            var m1 = ba.Deposit(50);
-            var m2 = ba.Deposit(75);
-            Console.WriteLine(ba);
+            //var m1 = ba.Deposit(50);
+            //var m2 = ba.Deposit(75);
+            //Console.WriteLine(ba);
 
-            ba.Restore(m1);
-            Console.WriteLine(ba);
+            //ba.Restore(m1);
+            //Console.WriteLine(ba);
 
-            ba.Restore(m2);
+            //ba.Restore(m2);
+            //Console.WriteLine(ba);
+
             Console.WriteLine(ba);
+            ba.Deposit(50);
+            ba.Deposit(25);
+            Console.WriteLine(ba);
+            ba.Undo();
+            Console.WriteLine($"Undo 1 {ba}");
+            ba.Undo();
+            Console.WriteLine($"Undo 2 {ba}");
+            ba.Redo();
+            Console.WriteLine($"Redo 1 {ba}");
+
         }
     }
 }
