@@ -18,7 +18,13 @@ namespace ObserverViaEvent
             FallsIll?.Invoke(this, new FallsIllEventArgs() { PatientAddress = Address, DoctorAddress = DoctorAddress } );
         }
 
+        public void Recuperate()
+        {
+            GotBetter?.Invoke(this, new EventArgs());
+        }
+
         public event EventHandler<FallsIllEventArgs> FallsIll;
+        public event EventHandler<EventArgs> GotBetter;
     }
 
 
@@ -35,12 +41,20 @@ namespace ObserverViaEvent
             p.CatchACold();
             //p.FallsIll -= CallDoctor;
 
+            p.GotBetter += delegate (object sender, EventArgs args) { GetsWell(sender, args, "get ripped"); };
+            p.Recuperate();
+
         }
 
         private static void CallDoctor(object sender, FallsIllEventArgs args)
         {
 
             Console.WriteLine($"Somebody call the doctor at {args.DoctorAddress} for patient at {args.PatientAddress}");
+        }
+
+        private static void GetsWell(object sender, EventArgs args, string getWellWish)
+        {
+            Console.WriteLine($"Got well, we wish him \"{getWellWish}\"");
         }
     }
 }
