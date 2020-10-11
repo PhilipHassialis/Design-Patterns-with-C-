@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using System;
+using System.Dynamic;
 using System.Threading;
+using ImpromptuInterface;
 
 namespace NullObjectDesignPattern
 {
@@ -52,6 +54,24 @@ namespace NullObjectDesignPattern
         }
     }
 
+    public class Null<TInterface>:DynamicObject where TInterface:class
+    {
+        public static TInterface Instance
+        { 
+            get
+            {
+
+                return new Null<TInterface>().ActLike<TInterface>(); 
+            }
+        }
+
+        public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)
+        {
+            result = Activator.CreateInstance(binder.ReturnType);
+            return true;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -59,13 +79,11 @@ namespace NullObjectDesignPattern
             //var log = new ConsoleLog();
             //var ba = new BankAccount(log);
             //ba.Deposit(100);
-            var cb = new ContainerBuilder();
-            cb.RegisterType<BankAccount>();
-            cb.RegisterType<NullLog>().As<ILog>();
-            using (var c = cb.Build())
-            {
-                var ba = c.Resolve<BankAccount>();
-            }
+
+            var log = Null<ILog>.Instance;
+            var ba = new BankAccount(log);
+            ba.Deposit(100);
+
         }
     }
 }
