@@ -189,9 +189,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakEventPattern", "Design 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverViaSpecialInterfaces", "Design Patterns\Behavioral\Observer\ObserverViaSpecialInterfaces\ObserverViaSpecialInterfaces.csproj", "{E7BC4C1A-3F49-46D7-98E2-42DC6CE44383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableCollections", "Design Patterns\Behavioral\Observer\ObservableCollections\ObservableCollections.csproj", "{B0BA5E77-545C-47AC-86B1-2573DBE61B22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObservableCollections", "Design Patterns\Behavioral\Observer\ObservableCollections\ObservableCollections.csproj", "{B0BA5E77-545C-47AC-86B1-2573DBE61B22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BidirectionalObserver", "Design Patterns\Behavioral\Observer\BidirectionalObserver\BidirectionalObserver.csproj", "{132EC1F4-1D7D-4481-9C9D-54CE2846ED02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BidirectionalObserver", "Design Patterns\Behavioral\Observer\BidirectionalObserver\BidirectionalObserver.csproj", "{132EC1F4-1D7D-4481-9C9D-54CE2846ED02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyDependencies", "Design Patterns\Behavioral\Observer\PropertyDependencies\PropertyDependencies.csproj", "{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1043,6 +1045,18 @@ Global
 		{132EC1F4-1D7D-4481-9C9D-54CE2846ED02}.Release|x64.Build.0 = Release|Any CPU
 		{132EC1F4-1D7D-4481-9C9D-54CE2846ED02}.Release|x86.ActiveCfg = Release|Any CPU
 		{132EC1F4-1D7D-4481-9C9D-54CE2846ED02}.Release|x86.Build.0 = Release|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Debug|x64.Build.0 = Debug|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Debug|x86.Build.0 = Debug|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Release|x64.ActiveCfg = Release|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Release|x64.Build.0 = Release|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Release|x86.ActiveCfg = Release|Any CPU
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1140,6 +1154,7 @@ Global
 		{E7BC4C1A-3F49-46D7-98E2-42DC6CE44383} = {CA002E35-8F1C-482B-BDD1-271BD7D58382}
 		{B0BA5E77-545C-47AC-86B1-2573DBE61B22} = {CA002E35-8F1C-482B-BDD1-271BD7D58382}
 		{132EC1F4-1D7D-4481-9C9D-54CE2846ED02} = {CA002E35-8F1C-482B-BDD1-271BD7D58382}
+		{D75D3D8A-FD8B-42F5-92F1-79DA8E0D4516} = {CA002E35-8F1C-482B-BDD1-271BD7D58382}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
