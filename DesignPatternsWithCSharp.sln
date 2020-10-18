@@ -207,6 +207,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeStateMachine", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchBasedStateMachine", "Design Patterns\Behavioral\State\SwitchBasedStateMachine\SwitchBasedStateMachine.csproj", "{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch Expression State Machine", "Design Patterns\Behavioral\State\Switch Expression State Machine\Switch Expression State Machine.csproj", "{1DED3F2D-9483-48D6-A02B-A0311EFF2160}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1129,6 +1131,18 @@ Global
 		{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF}.Release|x64.Build.0 = Release|Any CPU
 		{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF}.Release|x86.ActiveCfg = Release|Any CPU
 		{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF}.Release|x86.Build.0 = Release|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Debug|x64.Build.0 = Debug|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Debug|x86.Build.0 = Debug|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Release|x64.ActiveCfg = Release|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Release|x64.Build.0 = Release|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Release|x86.ActiveCfg = Release|Any CPU
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1233,6 +1247,7 @@ Global
 		{D77A9532-689A-43CD-8CDF-03D6C56B75BB} = {5DFC1427-28EE-48CE-89FD-6F6B3C0E7AB2}
 		{C84F44D1-46ED-4B7A-A6CA-673E3AE12A33} = {5DFC1427-28EE-48CE-89FD-6F6B3C0E7AB2}
 		{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF} = {5DFC1427-28EE-48CE-89FD-6F6B3C0E7AB2}
+		{1DED3F2D-9483-48D6-A02B-A0311EFF2160} = {5DFC1427-28EE-48CE-89FD-6F6B3C0E7AB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
