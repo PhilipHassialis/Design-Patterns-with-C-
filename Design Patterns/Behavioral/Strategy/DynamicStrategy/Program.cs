@@ -52,10 +52,10 @@ namespace DynamicStrategy
         }
     }
 
-    public class TextProcessor
+    public class TextProcessor<LS> where LS:IListStrategy, new()
     {
         private StringBuilder sb = new StringBuilder();
-        private IListStrategy listStrategy;
+        private IListStrategy listStrategy = new LS();
 
         public void SetOutputFormat(OutputFormat format)
         {
@@ -96,16 +96,28 @@ namespace DynamicStrategy
     {
         static void Main(string[] args)
         {
-            var tp = new TextProcessor();
-            tp.SetOutputFormat(OutputFormat.Markdown);
-            tp.AppendList(new[] { "apple", "banana", "lemon" });
+
+
+
+            //var tp = new TextProcessor();
+            //tp.SetOutputFormat(OutputFormat.Markdown);
+            //tp.AppendList(new[] { "apple", "banana", "lemon" });
+            //Console.WriteLine(tp);
+            //tp.Clear();
+            //tp.SetOutputFormat(OutputFormat.Html);
+            //tp.AppendList(new[] { "apple", "banana", "lemon" });
+
+            var tp = new TextProcessor<MarkdownListStrategy>();
+            tp.AppendList(new[] { "one", "two", "three" });
             Console.WriteLine(tp);
-            tp.Clear();
-            tp.SetOutputFormat(OutputFormat.Html);
-            tp.AppendList(new[] { "apple", "banana", "lemon" });
 
             Console.WriteLine();
-            Console.WriteLine(tp);
+
+            var tp2 = new TextProcessor<HtmlListStrategy>();
+            tp2.AppendList(new[] { "four", "five", "six" });
+            Console.WriteLine(tp2);
+
+
 
         }
 
