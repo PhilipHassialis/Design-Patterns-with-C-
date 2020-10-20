@@ -205,17 +205,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicImplementation", "De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeStateMachine", "Design Patterns\Behavioral\State\HandmadeStateMachine\HandmadeStateMachine.csproj", "{C84F44D1-46ED-4B7A-A6CA-673E3AE12A33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchBasedStateMachine", "Design Patterns\Behavioral\State\SwitchBasedStateMachine\SwitchBasedStateMachine.csproj", "{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchBasedStateMachine", "Design Patterns\Behavioral\State\SwitchBasedStateMachine\SwitchBasedStateMachine.csproj", "{812BC9CE-45A0-4BDC-B04C-1EA7DBDF34AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch Expression State Machine", "Design Patterns\Behavioral\State\Switch Expression State Machine\Switch Expression State Machine.csproj", "{1DED3F2D-9483-48D6-A02B-A0311EFF2160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch Expression State Machine", "Design Patterns\Behavioral\State\Switch Expression State Machine\Switch Expression State Machine.csproj", "{1DED3F2D-9483-48D6-A02B-A0311EFF2160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State Machine With Stateless", "Design Patterns\Behavioral\State\State Machine With Stateless\State Machine With Stateless.csproj", "{7B2C1444-7BE5-4314-977A-A7D24F3CC8D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State Machine With Stateless", "Design Patterns\Behavioral\State\State Machine With Stateless\State Machine With Stateless.csproj", "{7B2C1444-7BE5-4314-977A-A7D24F3CC8D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateCodingExercise", "Exercises\StateCodingExercise\StateCodingExercise.csproj", "{E74D91A3-A8FF-4A0A-B6C4-F85FE8EDFBA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateCodingExercise", "Exercises\StateCodingExercise\StateCodingExercise.csproj", "{E74D91A3-A8FF-4A0A-B6C4-F85FE8EDFBA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{C7618540-88D6-4A1B-82E3-569EC2C06DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicStrategy", "Design Patterns\Behavioral\Strategy\DynamicStrategy\DynamicStrategy.csproj", "{895BA578-9E42-4F55-9D06-17F696B50874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicStrategy", "Design Patterns\Behavioral\Strategy\DynamicStrategy\DynamicStrategy.csproj", "{895BA578-9E42-4F55-9D06-17F696B50874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityAndComparisonStrategies", "Design Patterns\Behavioral\Strategy\EqualityAndComparisonStrategies\EqualityAndComparisonStrategies.csproj", "{8147FBA8-2773-4F0C-9B99-FFD02D54E627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1187,6 +1189,18 @@ Global
 		{895BA578-9E42-4F55-9D06-17F696B50874}.Release|x64.Build.0 = Release|Any CPU
 		{895BA578-9E42-4F55-9D06-17F696B50874}.Release|x86.ActiveCfg = Release|Any CPU
 		{895BA578-9E42-4F55-9D06-17F696B50874}.Release|x86.Build.0 = Release|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Debug|x64.Build.0 = Debug|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Debug|x86.Build.0 = Debug|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Release|x64.ActiveCfg = Release|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Release|x64.Build.0 = Release|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Release|x86.ActiveCfg = Release|Any CPU
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1296,6 +1310,7 @@ Global
 		{E74D91A3-A8FF-4A0A-B6C4-F85FE8EDFBA1} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
 		{C7618540-88D6-4A1B-82E3-569EC2C06DDF} = {16DD21A1-4ECE-48FB-82E1-897440384066}
 		{895BA578-9E42-4F55-9D06-17F696B50874} = {C7618540-88D6-4A1B-82E3-569EC2C06DDF}
+		{8147FBA8-2773-4F0C-9B99-FFD02D54E627} = {C7618540-88D6-4A1B-82E3-569EC2C06DDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
