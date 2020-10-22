@@ -223,11 +223,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyCodingExercise", "E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{697BF68C-104F-4140-827B-2E4CA8351949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "Design Patterns\Behavioral\Template\TemplateMethod\TemplateMethod.csproj", "{375CD9DB-339F-4E73-B420-85A837E6ADAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "Design Patterns\Behavioral\Template\TemplateMethod\TemplateMethod.csproj", "{375CD9DB-339F-4E73-B420-85A837E6ADAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functional Template Method", "Design Patterns\Behavioral\Template\Functional Template Method\Functional Template Method.csproj", "{0D558016-2224-4BAB-9A48-11D3094DEBA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functional Template Method", "Design Patterns\Behavioral\Template\Functional Template Method\Functional Template Method.csproj", "{0D558016-2224-4BAB-9A48-11D3094DEBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateCodingExercise", "Exercises\TemplateCodingExercise\TemplateCodingExercise.csproj", "{BAAD0972-D13F-4242-9B01-011DF669688E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateCodingExercise", "Exercises\TemplateCodingExercise\TemplateCodingExercise.csproj", "{BAAD0972-D13F-4242-9B01-011DF669688E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visitor", "Visitor", "{42B6A804-0188-4761-8D84-3EB6F8625E3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intrusive Expression Printing", "Design Patterns\Behavioral\Visitor\Intrusive Expression Printing\Intrusive Expression Printing.csproj", "{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1259,6 +1263,18 @@ Global
 		{BAAD0972-D13F-4242-9B01-011DF669688E}.Release|x64.Build.0 = Release|Any CPU
 		{BAAD0972-D13F-4242-9B01-011DF669688E}.Release|x86.ActiveCfg = Release|Any CPU
 		{BAAD0972-D13F-4242-9B01-011DF669688E}.Release|x86.Build.0 = Release|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Debug|x64.Build.0 = Debug|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x64.ActiveCfg = Release|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x64.Build.0 = Release|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1374,6 +1390,8 @@ Global
 		{375CD9DB-339F-4E73-B420-85A837E6ADAB} = {697BF68C-104F-4140-827B-2E4CA8351949}
 		{0D558016-2224-4BAB-9A48-11D3094DEBA1} = {697BF68C-104F-4140-827B-2E4CA8351949}
 		{BAAD0972-D13F-4242-9B01-011DF669688E} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
+		{42B6A804-0188-4761-8D84-3EB6F8625E3A} = {16DD21A1-4ECE-48FB-82E1-897440384066}
+		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
