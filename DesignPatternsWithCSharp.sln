@@ -233,6 +233,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visitor", "Visitor", "{42B6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intrusive Expression Printing", "Design Patterns\Behavioral\Visitor\Intrusive Expression Printing\Intrusive Expression Printing.csproj", "{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection-Based Printing", "Design Patterns\Behavioral\Visitor\Reflection-Based Printing\Reflection-Based Printing.csproj", "{6C051599-BABC-4876-A0EE-2D6105B680B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1275,6 +1277,18 @@ Global
 		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x64.Build.0 = Release|Any CPU
 		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x86.ActiveCfg = Release|Any CPU
 		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A}.Release|x86.Build.0 = Release|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Debug|x64.Build.0 = Debug|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Debug|x86.Build.0 = Debug|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Release|x64.ActiveCfg = Release|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Release|x64.Build.0 = Release|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C051599-BABC-4876-A0EE-2D6105B680B1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1392,6 +1406,7 @@ Global
 		{BAAD0972-D13F-4242-9B01-011DF669688E} = {F01AE3CD-1CF7-4C36-A8DD-4625F491A46E}
 		{42B6A804-0188-4761-8D84-3EB6F8625E3A} = {16DD21A1-4ECE-48FB-82E1-897440384066}
 		{4CA71389-C4A5-4EF1-B48C-EEEF8251DA0A} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
+		{6C051599-BABC-4876-A0EE-2D6105B680B1} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
