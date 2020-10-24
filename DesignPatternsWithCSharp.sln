@@ -235,9 +235,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intrusive Expression Printi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection-Based Printing", "Design Patterns\Behavioral\Visitor\Reflection-Based Printing\Reflection-Based Printing.csproj", "{6C051599-BABC-4876-A0EE-2D6105B680B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicVisitorDoubleDispatch", "Design Patterns\Behavioral\Visitor\ClassicVisitorDoubleDispatch\ClassicVisitorDoubleDispatch.csproj", "{AC370CDD-9153-44AF-98B5-7368C66D6255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicVisitorDoubleDispatch", "Design Patterns\Behavioral\Visitor\ClassicVisitorDoubleDispatch\ClassicVisitorDoubleDispatch.csproj", "{AC370CDD-9153-44AF-98B5-7368C66D6255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicVisitorViaDLR", "Design Patterns\Behavioral\Visitor\DynamicVisitorViaDLR\DynamicVisitorViaDLR.csproj", "{6CC7413F-A35F-418F-B828-F8389A00406C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicVisitorViaDLR", "Design Patterns\Behavioral\Visitor\DynamicVisitorViaDLR\DynamicVisitorViaDLR.csproj", "{6CC7413F-A35F-418F-B828-F8389A00406C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcyclicVisitor", "Design Patterns\Behavioral\Visitor\AcyclicVisitor\AcyclicVisitor.csproj", "{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1317,6 +1319,18 @@ Global
 		{6CC7413F-A35F-418F-B828-F8389A00406C}.Release|x64.Build.0 = Release|Any CPU
 		{6CC7413F-A35F-418F-B828-F8389A00406C}.Release|x86.ActiveCfg = Release|Any CPU
 		{6CC7413F-A35F-418F-B828-F8389A00406C}.Release|x86.Build.0 = Release|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Debug|x64.Build.0 = Debug|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Debug|x86.Build.0 = Debug|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Release|x64.ActiveCfg = Release|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Release|x64.Build.0 = Release|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Release|x86.ActiveCfg = Release|Any CPU
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1437,6 +1451,7 @@ Global
 		{6C051599-BABC-4876-A0EE-2D6105B680B1} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
 		{AC370CDD-9153-44AF-98B5-7368C66D6255} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
 		{6CC7413F-A35F-418F-B828-F8389A00406C} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
+		{7BB9E237-41D0-4DC3-A497-FD1BC6977C82} = {42B6A804-0188-4761-8D84-3EB6F8625E3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DA6BDEA-70BB-4CFE-B9A4-0D93D0FF634D}
